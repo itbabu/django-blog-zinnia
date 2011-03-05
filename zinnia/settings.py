@@ -23,7 +23,9 @@ WYSIWYG = getattr(settings, 'ZINNIA_WYSIWYG',
 
 MAIL_COMMENT = getattr(settings, 'ZINNIA_MAIL_COMMENT', True)
 MAIL_COMMENT_REPLY = getattr(settings, 'ZINNIA_MAIL_COMMENT_REPLY', False)
-AKISMET_COMMENT = getattr(settings, 'ZINNIA_AKISMET_COMMENT', True)
+AKISMET_COMMENT =  getattr(settings, 'ZINNIA_AKISMET_COMMENT', True) # to be changed?
+COMMENT_MODERATION = getattr(settings, 'ZINNIA_COMMENT_MODERATION', True)
+MODERATION_TYPE = getattr(settings, 'ZINNIA_MODERATION_TYPE', 'akismet')
 
 UPLOAD_TO = getattr(settings, 'ZINNIA_UPLOAD_TO', 'uploads')
 
